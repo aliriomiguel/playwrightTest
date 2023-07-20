@@ -1,0 +1,17 @@
+{
+  "name": "playwrighttest",
+  "version": "1.0.0",
+  "description": "a test using paywright - login in codere site",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Alirio Aranguren",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.36.1",
+    "@types/node": "^20.4.2",
+    "playwright": "^1.36.1",
+    "typescript": "^5.1.6"
+  }
+}
