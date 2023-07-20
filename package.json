@@ -4,7 +4,8 @@
   "description": "a test using paywright - login in codere site",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
   },
   "author": "Alirio Aranguren",
   "license": "MIT",
