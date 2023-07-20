@@ -16,9 +16,8 @@ test("login to codere", async () => {
   // Ensure we are on the login page
   await page.waitForLoadState();
 
-  //await page.locator('body > ion-app > ng-component > codere-navbar-pc > ion-navbar > div.toolbar-content.toolbar-content-md > div.nav.right.userNavbar.not-logged > ion-buttons:nth-child(2) > button.btAccess.bar-button.bar-button-md.bar-button-default.bar-button-default-md').click();
+  //Accept cookies :D
   await page.getByRole('button', { name: 'ACEPTAR' }).click();
-  //await page.getByRole('button', { name: 'Aceptar la selección' }).click();
 
 
   await page.getByRole('button', { name: 'Acceder' }).click();
@@ -36,7 +35,6 @@ test("login to codere", async () => {
   // Check if login is successful
   const badCredentials = await page.waitForSelector('body > ion-app > ion-alert > div', { state: 'visible' });
   
-  //await expect(page.locator('body > ion-app > ion-alert > div')).toBeVisible();
   if (badCredentials) {
     console.log('Login failed.');
   } else {
